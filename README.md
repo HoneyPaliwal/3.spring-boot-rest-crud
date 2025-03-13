@@ -3,6 +3,7 @@ Employee Management System using Spring Boot, JPA, and MySQL — a full-fledged 
 
 
 ----STARTS----
+
 IN THIS WE WILL BE DOING THE CRUD OPERATIONS ON THE EMPLOYEES
 
 1. Create the schema using the mysql queries and given in the MySQL Folder > schema.sql File.
@@ -111,6 +112,7 @@ Controller  <--->  Service <--->  DAO <---> DB
         It is the service layer responsibility to manage transaction boundaries.
 -Make Controller Methods also.
 -To test -
+    
     A] Read -
         i] Read All
         GET - http://localhost:8080/api/employees
