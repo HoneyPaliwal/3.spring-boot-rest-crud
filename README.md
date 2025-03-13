@@ -67,11 +67,13 @@ Controller  <--->  Service <--->  DAO <---> DB
     i] If there are number of DAO's, they all will be communicating with the service layer only.
     ii] No matter how many tables [entities] are present in the DB, Main source of communication is Service Layer.
 
-                             <--->  EmployeeDAO
-    Controller <---> Service <--->  SkillsDAO
-                             <--->  PayrollDAO
+                                     <--->  EmployeeDAO
+   
+    Controller <---> Service         <--->  SkillsDAO
+   
+                                     <--->  PayrollDAO
 
-6. @Transactional vs @Transactional(readOnly=true)
+7. @Transactional vs @Transactional(readOnly=true)
         @Transactional                              @Transactional(readOnly = true)
     For read and write operations               Optimized for read-only operations (select queries)
     (insert, update, delete, select)
@@ -85,7 +87,7 @@ Controller  <--->  Service <--->  DAO <---> DB
     Rolls back on unchecked exceptions by       Same rollback behavior, but no data changes to roll back
     default
 
-7. Now let's do CRUD in DAO and also use service layer for @Transactional Management.
+8. Now let's do CRUD in DAO and also use service layer for @Transactional Management.
 -We will do -
     i]Create
         1]Create Single Employee
