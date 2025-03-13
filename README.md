@@ -190,7 +190,7 @@ Controller  <--->  Service <--->  DAO <---> DB
           }
         ]
 
-    C] Delete
+    D] Delete
             i] Delete Single
             DELETE - http://localhost:8080/api/employees/1
 
